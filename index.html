@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Моя страница</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="header">
+                <button class="btn" id="editBg"><i class="fa-solid fa-pen"></i><span>Изменить обложку</span></button>
+                <div class="header__profile">
+                    <div class="user">
+                        <div class="avatar__block">
+                            <div class="avatar">
+                                <img src="img/man.jpg" alt="" class="avatar__img">
+                            </div>
+                        </div>
+                        <div class="user__info">
+                            <div class="user__name">Иванов Иван</div>
+                            <ul class="user__info-list">
+                                <li class="user__info-item">
+                                    <div class="user__info-icon">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div class="user__info-text">г. Тюмень</div>
+                                </li>
+                                <li class="user__info-item">
+                                    <div class="user__info-icon">
+                                        <i class="fa-solid fa-graduation-cap"></i>
+                                    </div>
+                                    <div class="user__info-text">Учебный центр "Дельфа"</div>
+                                </li>
+                                <li class="user__info-item">
+                                    <div class="user__info-icon"><i class="fa-solid fa-circle-info"></i></div>
+                                    <div class="user__info-text">Подробнее</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__btns">
+                        <button class="btn" id="editProf">Редактировать профиль</button>
+                    </div>
+                </div>
+                <form action="" class="editForm" name="editForm">
+                    <input class="input" type="text" name="userName" placeholder="Имя">
+                    <input class="input" type="text" name="city" placeholder="Город">
+                    <input class="input" type="text" name="learnLocation" placeholder="Место учебы">
+                    <button class="btn" id="saveBtn" name="saveBtn">Сохранить изменения</button>
+                    <button class="btn" id="closeBtn" name="closeBtn">Закрыть изменения</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
